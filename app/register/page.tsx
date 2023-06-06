@@ -12,7 +12,6 @@ const DOMAIN = process.env.MAILGUN_DOMAIN || ''
 export default function RegisterPage() {
   async function createUser(data: FormData) {
     'use server'
-    console.log('Data!', data)
 
     const password = await hash(data.get('password') as string, 12)
 
@@ -62,8 +61,7 @@ export default function RegisterPage() {
           />
           <Button type="submit">Create Account</Button>
         </form>
-
-        <p className="text-center">
+        <p>
           Have an account?{' '}
           <Link className="text-indigo-500 hover:underline" href="/login">
             Sign in

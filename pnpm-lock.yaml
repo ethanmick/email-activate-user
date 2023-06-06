@@ -5,11 +5,8 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@lotus-ux/tailwind':
-    specifier: 0.0.2
-    version: 0.0.2(tailwindcss@3.3.2)
   '@prisma/client':
-    specifier: ^4.15.0
+    specifier: 4.15.0
     version: 4.15.0(prisma@4.15.0)
   '@types/node':
     specifier: 20.2.5
@@ -24,7 +21,7 @@ dependencies:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.24)
   bcrypt:
-    specifier: ^5.1.0
+    specifier: 5.1.0
     version: 5.1.0
   eslint:
     specifier: 8.41.0
@@ -33,25 +30,25 @@ dependencies:
     specifier: 13.4.4
     version: 13.4.4(eslint@8.41.0)(typescript@5.0.4)
   form-data:
-    specifier: ^4.0.0
+    specifier: 4.0.0
     version: 4.0.0
   lotus-ux:
-    specifier: 0.0.6
-    version: 0.0.6(@types/react@18.2.7)(postcss@8.4.24)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)(typescript@5.0.4)
+    specifier: 0.0.7
+    version: 0.0.7(@types/react@18.2.7)(postcss@8.4.24)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)(typescript@5.0.4)
   mailgun.js:
-    specifier: ^9.0.0
+    specifier: 9.0.0
     version: 9.0.0
   next:
     specifier: 13.4.4
     version: 13.4.4(react-dom@18.2.0)(react@18.2.0)
   next-auth:
-    specifier: ^4.22.1
+    specifier: 4.22.1
     version: 4.22.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)
   postcss:
     specifier: 8.4.24
     version: 8.4.24
   prisma:
-    specifier: ^4.15.0
+    specifier: 4.15.0
     version: 4.15.0
   react:
     specifier: 18.2.0
@@ -546,8 +543,8 @@ packages:
       - react-dom
     dev: false
 
-  /@lotus-ux/tailwind@0.0.2(tailwindcss@3.3.2):
-    resolution: {integrity: sha512-ad5qfpTunRAxlxDOkWyIcfCj2ydCJu8mOWjvPBp+OyC2r9IL1sYK3n4HG/Vou8vPHY6kJMqGNI5hiWNGO4hDUA==}
+  /@lotus-ux/tailwind@0.0.3(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-ICdIqg6a7vLdPUmZW5Dd1TNrJKUsCRPvgNTfdsBzrW5NDSHmJsk2+Q7VFeFvWhRTHDbR69wSvoaVGFQIWmax8g==}
     peerDependencies:
       tailwindcss: ^3.0.0
     dependencies:
@@ -4049,8 +4046,8 @@ packages:
       js-tokens: 4.0.0
     dev: false
 
-  /lotus-ux@0.0.6(@types/react@18.2.7)(postcss@8.4.24)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)(typescript@5.0.4):
-    resolution: {integrity: sha512-l4AWDuRzGOTj3qFqKYnoZ0gMsT3lmtY74glfTvIYkVp5nfMpi65aEQUg7NxXwg6RPUyZUR/PrZ1QRRyGA1U3NQ==}
+  /lotus-ux@0.0.7(@types/react@18.2.7)(postcss@8.4.24)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)(typescript@5.0.4):
+    resolution: {integrity: sha512-iwI/7CVWXFfzJ3fd2fTjzTyUg7xPwM4HcwQUmU7UxznJXhegy2hERrMzw5/zJhVg0K9chLZgEOwnvRRz7kl+IQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -4060,7 +4057,7 @@ packages:
       '@lotus-ux/label': 0.0.1(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.4)
       '@lotus-ux/popover': 0.0.1(@types/react@18.2.7)(postcss@8.4.24)(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.4)
       '@lotus-ux/provider': 0.0.1(react-dom@18.2.0)(react@18.2.0)
-      '@lotus-ux/tailwind': 0.0.2(tailwindcss@3.3.2)
+      '@lotus-ux/tailwind': 0.0.3(tailwindcss@3.3.2)
       '@lotus-ux/text-field': 0.0.1(postcss@8.4.24)(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.4)
       '@lotus-ux/utils': 0.0.1(react@18.2.0)
       react: 18.2.0
