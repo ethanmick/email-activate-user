@@ -2,11 +2,6 @@ import { prisma } from '@/lib/prisma'
 import { redirect } from 'next/navigation'
 import { NextRequest } from 'next/server'
 
-/**
- *
- * @param param0
- * @returns
- */
 export async function GET(
   _request: NextRequest,
   {

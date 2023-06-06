@@ -20,7 +20,7 @@ model User {
 }
 
 model ActivateToken {
-  id          String    @id @default(uuid())
+  id          Int       @id @default(autoincrement())
   token       String    @unique
   createdAt   DateTime  @default(now())
   activatedAt DateTime?

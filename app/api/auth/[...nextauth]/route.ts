@@ -25,8 +25,12 @@ const authOptions: NextAuthOptions = {
           },
         })
 
-        if (!user || !user.active) {
+        if (!user) {
           return null
+        }
+
+        if (!user.active) {
+          throw new Error('User is not active')
         }
 
         const isPasswordValid = await compare(
