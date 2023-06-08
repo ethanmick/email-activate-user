@@ -2,9 +2,11 @@ import { prisma } from '@/lib/prisma'
 import { hash } from 'bcrypt'
 import { randomUUID } from 'crypto'
 import formData from 'form-data'
-import { Button, TextField } from 'lotus-ux'
+import { TextField } from 'lotus-ux'
 import Mailgun from 'mailgun.js'
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
+import { Submit } from './submit'
 
 const API_KEY = process.env.MAILGUN_API_KEY || ''
 const DOMAIN = process.env.MAILGUN_DOMAIN || ''
@@ -44,6 +46,8 @@ export default function RegisterPage() {
     }
 
     await client.messages.create(DOMAIN, messageData)
+
+    redirect('/register/success')
   }
 
   return (
@@ -59,7 +63,7 @@ export default function RegisterPage() {
             type="password"
             isRequired
           />
-          <Button type="submit">Create Account</Button>
+          <Submit />
         </form>
         <p>
           Have an account?{' '}
